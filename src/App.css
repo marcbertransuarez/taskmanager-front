@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;500;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background-image: url("./images/blurry-gradient-haikei.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,
+h2,
+h3,
+h4,
+p {
+  text-shadow: 1px 0px 2px rgb(18, 34, 52);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.general-nav ul{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-evenly;
+ gap: 20px;
+}
+
+.general-nav ul li {
+  list-style: none;
+}
+
+.general-nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.home {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ gap:30px;
+ margin-top: 150px;
+}
+
+.home a {
+  text-decoration: none;
+  background-color: white;
+  padding: 5px;
+  border-radius: 15px;
+  color: #462dd4
+}
+
+.form-div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+  margin-top: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+  text-decoration: none;
+  background-color: white;
+  padding: 5px;
+  border-radius: 15px;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+}
+
+button {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.task-list h4 {
+  width: 170px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.task-list select {
+  width: 100px;
+  height: 20px;
+}
+
+.task-list button {
+  text-decoration: none;
+  background-color: white;
+  padding: 5px;
+  border-radius: 15px;
+  color: #462dd4;
+  border: none;
+  padding: 5px 10px;
+}
+
+.completed {
+  background-color: green;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  opacity: 0.6;
+}
+
+.incompleted {
+  color: black;
+  text-shadow: 1px 0px 2px rgb(255, 255, 255);
+}
+
+.label-new-task {
+  border-bottom: 2px solid white
+}
+
+.form input {
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+}
+
+.new-task-content {
+  display: flex;
+  gap: 10px;
 }
